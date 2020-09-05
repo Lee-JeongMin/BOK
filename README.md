@@ -26,7 +26,8 @@
 * Ngramize
   * "Noun, Adjective, Adverb, Verb, Negation" 총 5개의 품사만 사용
   * unigram ~ 5-gram까지 15번 이상 등장하는 단어만 사용  
-  * 
+
+
 
 #### 3. Polaity Classification
 
