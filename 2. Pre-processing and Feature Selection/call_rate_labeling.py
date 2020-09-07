@@ -61,11 +61,9 @@ for i, diff in enumerate(value_diff):
     elif diff < 0:
         fin_df['label'][i] = 'down'   
 
+# 7. 2005년 ~ 2017년만 남기기
+fin_df = fin_df.loc['2005.01.01':'2017.12.31', :]
 fin_df.reset_index(inplace=True)
-
-
-# 7. 2005년 이전 데이터 없애기
-fin_df = fin_df.loc[33:,:]
 
 fin_df.to_csv('call_rate_finish.csv',index=False)
 print('finish!')
