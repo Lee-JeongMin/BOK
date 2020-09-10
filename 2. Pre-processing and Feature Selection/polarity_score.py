@@ -6,9 +6,12 @@ df_3 = pd.read_csv('./dataset/minutes_with_label.csv')
 
 # 뉴스 & 채권분석리포트 & 금통위 의사록 합치기
 news_report_mpb = pd.concat([df_1, df_2, df_3])
+
+# 결측값있는 행 제거
+news_report_mpb = news_report_mpb.dropna(axis=0)
 news_report_mpb.to_csv('./dataset/news_report_mpb.csv')
 
-news_report_mpb = pd.read_csv('./dataset/news_report_mpb.csv')
+# news_report_mpb = pd.read_csv('./dataset/news_report_mpb.csv')
 
 def cnt_value(df, col_name):
 
