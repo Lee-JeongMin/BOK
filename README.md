@@ -31,9 +31,19 @@
 
 #### 3. Polaity Classification
 
+![polarity_score](img/polarity_score.PNG)
+
 
 
 #### 4. Sentiment Measurement
+
+* 문장의 어조 구하기
+
+![tone_s](img/tone_s.PNG)
+
+* tone_s를 사용해 문서 전체의 어조 구하기
+
+![tons_i](img/tons_i.PNG)
 
 
 
